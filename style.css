@@ -37,11 +37,30 @@
         }
 
         nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+/* Create a left-aligned container for logo and name */
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
+
+/* Make the logo darker */
+.nav-brand img {
+    height: 48px;
+    width: auto;
+    filter: brightness(0.8); /* This will make the logo darker */
+}
+
+/* Remove the old logo styling */
+nav > div[style] {
+    display: none !important;
+}
 
         .logo {
             font-size: 1.8rem;
