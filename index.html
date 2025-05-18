@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="map.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Well<span>Being</span></div>
+          <ul class="nav-links">
+            <li>
+              <a href="#about" class="nav-link" data-i18n="about">About Us</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link" data-i18n="contact"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="nav-link" data-i18n="services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <button class="dark-mode-toggle" id="darkModeToggle">
+                <span class="toggle-icon"></span>
+              </button>
+            </li>
+            <li>
+              <button class="lang-btn" id="enBtn">EN</button>
+              <button class="lang-btn" id="mkdBtn">MK</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- English Content -->
+    <section id="langEn" class="language-section active">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1 data-i18n="heroTitle">Professional Healthcare Services</h1>
+          <p data-i18n="heroText">
+            Compassionate care in the comfort of your home. Our certified
+            professionals are ready to assist you with your healthcare needs.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-title">
+            <h2 data-i18n="servicesTitle">Our Services</h2>
+            <p data-i18n="servicesSubtitle">
+              We provide high-quality medical services tailored to your needs
+            </p>
+          </div>
+          <div class="services-grid">
+            <!-- Infusion Service -->
+            <div class="service-card">
+              <div class="service-img">
+                <img
+                  src="https://floydvalley.org/wp-content/uploads/2021/10/infusion-services.jpg"
+                  alt="Infusion Therapy"
+                />
+              </div>
+              <div class="service-content">
+                <h3 data-i18n="service1Title">Medication administration</h3>
+                <p data-i18n="service1Text">
+                  Professional support for administering prescribed treatments
+                  such as IV therapy, injections, and other forms of
+                  medication—safely delivered by our trained nurses.
+                </p>
+                <button
+                  class="btn request-service"
+                  data-service="Infusion Therapy"
+                  data-i18n="requestService"
+                >
+                  Request Service
+                </button>
+              </div>
+            </div>
+    <!-- Blood Pressure Monitoring -->
+            <div class="service-card">
+              <div class="service-img">
+                <img
+                  src="https://www.columbiadoctors.org/sites/default/files/styles/cola_media_1280_16_9/public/media/images/2018-02/4223_columbia_cardiology_by_john_abbott.jpg?itok=CqKVQJRr"
+                  alt="Blood Pressure Monitoring"
+                />
+              </div>
+              <div class="service-content">
+                <h3 data-i18n="service2Title">Measurement of vital signs</h3>
+                <p data-i18n="service2Text">
+                  Regular blood pressure, pulse, oxygen saturation, respiratory
+                  rate and body temperature checks.
+                </p>
+                <button
+                  class="btn request-service"
+                  data-service="Blood Pressure Monitoring"
+                  data-i18n="requestService"
+                >
+                  Request Service
+                </button>
+              </div>
+            </div>
+
+            <!-- Elderly Care -->
+            <div class="service-card">
+              <div class="service-img">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqHOaRsLQeq40R8lSq1ACyaWZeAQTD9Bo9ZA&s"
+                  alt="Elderly Care"
+                />
+              </div>
+              <div class="service-content">
+                <h3 data-i18n="service3Title">Wound care</h3>
+                <p data-i18n="service3Text">
+                  Professional assessment, cleaning, and dressing of acute and
+                  chronic wounds. Our nurses ensure safe healing, infection
+                  prevention, and personalized follow-up.
+                </p>
+                <button
+                  class="btn request-service"
+                  data-service="Elderly Care"
+                  data-i18n="requestService"
+                >
+                  Request Service
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="section-title">
+            <h2 data-i18n="aboutTitle">About WellBeing</h2>
+            <p data-i18n="aboutSubtitle">
+              Our mission is to provide exceptional healthcare services with
+              compassion and professionalism
+            </p>
+          </div>
+          <div style="text-align: center; max-width: 800px; margin: 0 auto">
+            <p data-i18n="aboutText1">
+              WellBeing was founded with the vision of making quality healthcare
+              accessible to everyone in the comfort of their homes. Our team of
+              certified professionals is dedicated to providing personalized
+              care that meets the highest standards.
+            </p>
+            <p data-i18n="aboutText2">
+              We believe in treating our patients with dignity, respect, and
+              compassion while delivering evidence-based medical services.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2 data-i18n="contactTitle">Contact Us</h2>
+            <p data-i18n="contactSubtitle">
+              Get in touch with our team for any questions or concerns
+            </p>
+          </div>
+          <div style="text-align: center; max-width: 800px; margin: 0 auto">
+            <p><strong data-i18n="phone">Phone:</strong> (123) 456-7890</p>
+            <p><strong data-i18n="email">Email:</strong> info@wellbeing.com</p>
+            <p>
+              <strong data-i18n="address">Address:</strong> 123 Healthcare St,
+              Medical City, MC 12345
+            </p>
+            <p data-i18n="hours">
+              Our office hours are Monday to Friday, 9:00 AM to 5:00 PM.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-column">
+              <h3>WellBeing</h3>
+              <p data-i18n="footerAbout">
+                Providing compassionate healthcare services at your convenience.
+              </p>
+            </div>
+            <div class="footer-column">
+              <h3 data-i18n="services">Services</h3>
+              <a href="#" data-i18n="service1Title">Infusion Therapy</a>
+              <a href="#" data-i18n="service2Title"
+                >Blood Pressure Monitoring</a
+              >
+              <a href="#" data-i18n="service3Title">Elderly Care</a>
+            </div>
+            <div class="footer-column">
+              <h3 data-i18n="quickLinks">Quick Links</h3>
+              <a href="#about" data-i18n="about">About Us</a>
+              <a href="#contact" data-i18n="contact">Contact</a>
+              <a href="#services" data-i18n="services">Services</a>
+            </div>
+            <div class="footer-column">
+              <h3 data-i18n="contact">Contact</h3>
+              <p>123 Healthcare St</p>
+              <p>Medical City, MC 12345</p>
+              <p>(123) 456-7890</p>
+              <p>info@wellbeing.com</p>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>
+              &copy; 2023 WellBeing.
+              <span data-i18n="rights">All rights reserved.</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Macedonian Content -->
+    <section id="langMkd" class="language-section">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1>Професионални здравствени услуги</h1>
+          <p>
+            Сочувствителна грижа во удобноста на вашиот дом. Нашите
+            сертифицирани професионалци се подготвени да ви помогнат со вашите
+            здравствени потреби.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services" id="services-mkd">
+        <div class="container">
+          <div class="section-title">
+            <h2>Нашите сервиси</h2>
+            <p>
+              Обезбедуваме висококвалитетни медицински услуги прилагодени на
+              вашите потреби
+            </p>
+          </div>
+          <div class="services-grid">
+            <!-- Infusion Service -->
+            <div class="service-card">
+              <div class="service-img">
+                <img
+                  src="https://floydvalley.org/wp-content/uploads/2021/10/infusion-services.jpg"
+                  alt="Infusion Therapy"
+                />
+              </div>
+              <div class="service-content">
+                <h3>Администрација на лекови</h3>
+                <p>
+                  Професионална поддршка за администрирање на пропишаните
+                  третмани како што се IV терапија, инјекции и други форми на
+                  лекови - безбедно испорачана од нашите обучени медицински
+                  сестри.
+                </p>
+                <button
+                  class="btn request-service"
+                  data-service="Infusion Therapy"
+                >
+                  Побарајте услуга
+                </button>
+              </div>
+            </div>
+
+            <!-- Blood Pressure Monitoring -->
+            <div class="service-card">
+              <div class="service-img">
+                <img
+                  src="https://www.columbiadoctors.org/sites/default/files/styles/cola_media_1280_16_9/public/media/images/2018-02/4223_columbia_cardiology_by_john_abbott.jpg?itok=CqKVQJRr"
+                  alt="Blood Pressure Monitoring"
+                />
+              </div>
+              <div class="service-content">
+                <h3>Мерење на виталните знаци</h3>
+                <p>
+                  Редовни проверки на крвниот притисок, пулсот, заситеноста со
+                  кислород, фреквенцијата на дишење и телесната температура.
+                </p>
+                <button
+                  class="btn request-service"
+                  data-service="Blood Pressure Monitoring"
+                >
+                  Побарајте услуга
+                </button>
+              </div>
+            </div>
+
+            <!-- Elderly Care -->
+            <div class="service-card">
+              <div class="service-img">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqHOaRsLQeq40R8lSq1ACyaWZeAQTD9Bo9ZA&s"
+                  alt="Elderly Care"
+                />
+              </div>
+              <div class="service-content">
+                <h3>Нега на рани</h3>
+                <p>
+                  Професионална проценка, чистење и облекување на акутни и
+                  хронични рани. Нашите медицински сестри обезбедуваат безбедно
+                  заздравување, превенција од инфекции и персонализирано
+                  следење.
+                </p>
+                <button class="btn request-service" data-service="Elderly Care">
+                  Побарајте услуга
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section class="about" id="about-mkd">
+        <div class="container">
+          <div class="section-title">
+            <h2>Околу WellBeing</h2>
+            <p>
+              Нашата мисија е да обезбедиме исклучителни здравствени услуги со
+              сочувство и професионализам
+            </p>
+          </div>
+          <div style="text-align: center; max-width: 800px; margin: 0 auto">
+            <p>
+              WellBeing е основана со визија да се направи квалитетна
+              здравствена заштита достапна за секого во удобноста на нивните
+              домови. Нашиот тим од сертифицирани професионалци е посветен на
+              обезбедување персонализирана нега која ги исполнува највисоките
+              стандарди.
+            </p>
+            <p>
+              Ние веруваме во лекувањето на нашите пациенти со достоинство,
+              почит и сочувство додека даваме медицински услуги засновани на
+              докази.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact-mkd">
+        <div class="container">
+          <div class="section-title">
+            <h2>Контакт</h2>
+            <p>Контактирајте го тимот за било какви прашања</p>
+          </div>
+          <div style="text-align: center; max-width: 800px; margin: 0 auto">
+            <p><strong>Телефонски број</strong> (123) 456-7890</p>
+            <p><strong>Е-Маил:</strong> info@wellbeing.com</p>
+            <p><strong>Адреса:</strong> 123 Здравствена Ул, Скопје, MC 12345</p>
+            <p>
+              Нашите канцеларри се отворени од 09 до 17 часот од Понеделник до
+              Петок
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-column">
+              <h3>WellBeing</h3>
+              <p>
+                Обезбедување сочувствителни здравствени услуги по ваша
+                погодност.
+              </p>
+            </div>
+            <div class="footer-column">
+              <h3>Сервиси</h3>
+              <a href="#">Администрација на лекови</a>
+              <a href="#">Мерење на виталните знаци</a>
+              <a href="#">Згрижување на постари лица</a>
+            </div>
+            <div class="footer-column">
+              <h3>Брзи линкови</h3>
+              <a href="#about-mkd">За нас</a>
+              <a href="#contact-mkd">Контакт</a>
+              <a href="#services-mkd">Сервиси</a>
+            </div>
+            <div class="footer-column">
+              <h3>Контакт</h3>
+              <p>123 Здравствена Ул</p>
+              <p>Скопје, MC 12345</p>
+              <p>(123) 456-7890</p>
+              <p>info@wellbeing.com</p>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2023 WellBeing. Сите права се задржани.</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Service Request Modal -->
+    <div class="modal-overlay" id="serviceModal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 id="modalTitle">Request Service</h3>
+          <button class="close-btn">&times;</button>
+        </div>
+        <form id="serviceForm">
+          <div class="form-group">
+            <label for="name" id="nameLabel">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="age" id="ageLabel">Age</label>
+            <input type="number" id="age" name="age" required />
+          </div>
+          <div class="form-group">
+            <label for="phone" id="phoneLabel">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="email" id="emailLabel">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group" style="display: none">
+            <label for="service">Service Needed</label>
+            <input type="text" id="service" name="service" readonly />
+          </div>
+          <div class="form-group">
+            <label for="problem" id="problemLabel"
+              >Describe Your Service Needs</label
+            >
+            <textarea id="problem" name="problem" required></textarea>
+          </div>
+          <button type="submit" class="btn" id="submitBtn">
+            Submit Request
+          </button>
+          <div class="submit-message" id="submitMessage">
+            Thank you for your request! We will contact you shortly at the email
+            address you provided.
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-overlay status-modal" id="statusModal">
+        <div class="modal" id="mapmodal">
+            <div class="modal-header">
+                <h3 id="statusTitle">Service Request Accepted</h3>
+                <button class="close-btn" id="closeStatusBtn">&times;</button>
+            </div>
+            <div class="map-container" id="googlemap">
+                <div id="googleMap" style="width:100%;height:300px;"></div>
+            </div>
+            
+            <div class="status-header">
+                <div class="status-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Doctor">
+                </div>
+                <div class="status-info">
+                    <h4>Dr. Jane Smith</h4>
+                    <p>Cardiology Specialist</p>
+                    <p>ETA: 15 minutes</p>
+                </div>
+            </div>
+            
+            <div class="status-buttons">
+                <button class="status-btn" title="Security">
+                    🛡️
+                </button>
+                <button class="status-btn" title="Call">
+                    📞
+                </button>
+                <button class="status-btn" title="Cancel">
+                    ❌
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwmfAmEiF-BFOaK0XwlV6HMrnzW78zUbw&callback=initMap" async defer></script>
+
+
+  </body>
+</html>
